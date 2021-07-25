@@ -105,6 +105,14 @@
       </small> </footer>
     <script src="{% static '/assets/js/main.js' %}" defer="defer"></script>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script type="module">
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+const confButton = document.querySelector("#do-confetti");
+confButton.addEventListener("click", () => {
+  confetti();
+});
+</script>
   <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 </body>
 
